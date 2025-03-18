@@ -1,0 +1,135 @@
+/* Theme Name: Custom Theme
+Theme URI: http://example.com
+Author: Francesco Catania
+Author URI: https://github.com/FrancescoCt
+Description: A custom theme for WordPress
+Version: 1.0
+*/
+
+/* General Styles */
+/* Decomment the variables of the palette you like */
+:root {
+    /* Palette Green site */
+    --primaryColor: #388E3C;
+    --secondaryColor: #E0F7E9; /**/
+
+    /* Palette Black-Yellow site */
+    /*--primaryColor: #2C2C2C;
+    --secondaryColor: #FFD700; */
+}
+
+
+body {
+    font-family: 'Georgia, serif';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.bg-dark-custom{
+    background-color: var(--primaryColor);
+}
+.bg-light-custom{
+    background-color: var(--secondaryColor);
+    /* #2C3E50; */
+}
+.text-primary-custom{
+    color: var(--primaryColor);
+    /* #66BB6A; */
+}
+/* Button */
+.btn-custom {
+    background-color: var(--primaryColor);
+    color: white;
+    border: none;
+  }
+
+  .btn-custom:hover {
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+  }
+/* CardsAdvanced */
+.cardAdvanced {
+   position: relative;
+   overflow: hidden;
+   height: 200px;
+}
+.cardAdvanced-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primaryColor);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondaryColor);
+    font-size: 1.5em;
+    text-align: center;
+}
+.cardAdvanced:hover .cardAdvanced-overlay {
+   opacity: 0.8;
+} 
+@media (max-width: 768px) {
+    .cardAdvanced {
+        height: 100px;
+    }
+}
+/* Carousel */
+#carouselExampleIndicators {
+    max-width: 30%;
+    margin: 5% auto;
+}
+
+@media (max-width: 768px) {
+    #carouselExampleIndicators {
+        max-width: 300px;
+        margin: 5% auto;
+    }
+}
+
+/* Section */
+.custom-section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: var(--secondaryColor);
+}
+
+.custom-section img{
+    max-width: 100%;
+    margin: 5% auto;
+}
+/* Svg */
+.svg{
+    height: 24px;
+    width: 24px;
+    background-color: var(--secondaryColor);
+    border-radius: 5px;
+}
+/* zoom with overflow */
+.zoom {
+    transition: transform 0.2s; /* Animazione di transizione */
+  }
+
+.zoom:hover {
+   transform: scale(1.1); /* Zoom dell'immagine */
+}
+/* zoom without overflow */
+.zoom-container {
+    overflow: hidden; /* Nasconde l'espansione dell'immagine */
+  }
+
+  .zoom-container img {
+    transition: transform 0.2s; /* Animazione di transizione */
+  }
+
+  .zoom-container img:hover {
+    transform: scale(1.1); /* Zoom dell'immagine */
+  }
+
