@@ -10,7 +10,7 @@
   <a target="_blank" href="https://github.com/FrancescoCt/wordpressCustomTheme"><img src="https://img.shields.io/github/last-commit/francescoct/wordpressCustomTheme?logo=github&color=609966&logoColor=fff" alt="Last commit"/></a>
 </p>
 <div align="center">
-  <img src="https://github.com/FrancescoCt/wordpressCustomeTheme/blob/master/Thumbnail.jpg" alt="Thumbnail" width="100%"/>
+  <img src="https://github.com/FrancescoCt/wordpressCustomTheme/blob/master/Thumbnail.jpg" alt="Thumbnail" width="100%"/>
 </div>
 <br/><br/>
 
